@@ -2,21 +2,26 @@ import { DocsflyConfig } from 'docsfly'
 
 const config: DocsflyConfig = {
   site: {
-    name: 'My Docsfly App',
-    description: 'A documentation website built with Docsfly',
-    url: 'https://my-docsfly-app.vercel.app',
+    name: 'Prodfind Documentation',
+    description: 'A product discovery platform made for developers, investors, made by developers',
+    url: 'https://dpcs.prodfind.space',
   },
   docs: {
     dir: 'docs',
   },
   navigation: {
     logo: {
-      text: 'My Docsfly App',
+      text: 'Prodfind Documentation',
     },
     links: [
       {
+        text: "App",
+        href: 'https://prodfind.space',
+        external: true,
+      },
+      {
         text: 'GitHub',
-        href: 'https://github.com/usedocsfly/docsfly',
+        href: 'https://github.com/teamzisty/prodfind',
         external: true,
       },
     ],
