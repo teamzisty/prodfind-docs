@@ -1,31 +1,41 @@
-import { DocsflyConfig } from 'docsfly'
+import { DocsflyConfig } from "docsfly";
 
 const config: DocsflyConfig = {
   site: {
-    name: 'Prodfind Documentation',
-    description: 'A product discovery platform made for developers, investors, made by developers',
-    url: 'https://dpcs.prodfind.space',
+    name: "Prodfind Documentation",
+    description:
+      "A product discovery platform made for developers, investors, made by developers",
+    url: "https://docs.prodfind.space",
   },
-  docs: {
-    dir: 'docs',
-  },
-  navigation: {
-    logo: {
-      text: 'Prodfind Documentation',
-    },
-    links: [
+  header: {
+    title: "Prodfind Docs",
+    navigation: [
       {
-        text: "App",
-        href: 'https://prodfind.space',
-        external: true,
+        label: "Home",
+        href: "/",
       },
       {
-        text: 'GitHub',
-        href: 'https://github.com/teamzisty/prodfind',
-        external: true,
+        label: "Docs",
+        href: "/docs",
+      },
+      {
+        label: "App",
+        href: "https://prodfind.space",
+      },
+      {
+        label: "GitHub",
+        href: "https://github.com/teamzisty/prodfind",
       },
     ],
   },
-}
+  docs: {
+    dir: "docs",
+  },
+  navigation: {
+    logo: {
+      text: "Prodfind Documentation",
+    },
+  },
+};
 
-export default config
+export default config;
